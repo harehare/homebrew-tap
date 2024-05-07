@@ -6,7 +6,7 @@ class Restui < Formula
   license "MIT"
 
   depends_on "sbt" => :build
-  depends_on "openjdk"
+  depends_on "openjdk@13"
 
   def install
     system('sbt', 'assembly')
