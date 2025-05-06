@@ -1,22 +1,22 @@
-class MqLsp < Formula
+class MqLsp@013 < Formula
   desc "mq Language Server Protocol (LSP) Server"
   homepage "https://github.com/harehare/mq"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/harehare/mq/releases/download/v0.1.4/mq-lsp-x86_64-apple-darwin"
-    sha256 "b89f701e3ac7d7e69e6561780454601037a4cade048f6b5e3f72c4737f3a8e6b"
+    url "https://github.com/harehare/mq/releases/download/v0.1.3/mq-lsp-x86_64-apple-darwin"
+    sha256 "b282cf602aaccbe3547fe04d3069bc290faafef586d126adacb728667efd693e"
   elsif OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/harehare/mq/releases/download/v0.1.4/mq-lsp-aarch64-apple-darwin"
-    sha256 "7168bf65856b9b17b3340e6e3b9302fb842f61b2c5da1f96e08c5a2cf4efd631"
+    url "https://github.com/harehare/mq/releases/download/v0.1.3/mq-lsp-aarch64-apple-darwin"
+    sha256 "b22ccbc4ee9f9e5d6c19a28132607d0c8da4157fe13a0fb9b7578e7a4fb06d8b"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/harehare/mq/releases/download/v0.1.4/mq-lsp-x86_64-unknown-linux-gnu"
-    sha256 "169a5eeb77b919d8401465c459bdd4e37b4cd7be411ce48dc8c4cb64bdb3af5b"
+    url "https://github.com/harehare/mq/releases/download/v0.1.3/mq-lsp-x86_64-unknown-linux-gnu"
+    sha256 "95cd890d793e183746d3d375dbae113845ebbe45517bacb4a58a54367495799b"
   elsif OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/harehare/mq/releases/download/v0.1.4/mq-lsp-aarch64-unknown-linux-gnu"
-    sha256 "5891aa30d92ac51ea73efef97455f36197e032cf9b6193f4bd25e006b19b949d"
+    url "https://github.com/harehare/mq/releases/download/v0.1.3/mq-lsp-aarch64-unknown-linux-gnu"
+    sha256 "9f6a441efebcd209466889810b0f0e068392936484a8f96c995a1febbddd9378"
   end
 
-  version "0.1.4"
+  version "0.1.3"
   license "MIT"
 
   def install

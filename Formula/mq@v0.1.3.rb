@@ -1,22 +1,22 @@
-class Mq < Formula
+class Mq@013 < Formula
   desc "A jq-like command-line tool for Markdown processing"
   homepage "https://github.com/harehare/mq"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/harehare/mq/releases/download/v0.1.4/mq-x86_64-apple-darwin"
-    sha256 "c740f881b174c16065b971a1af8f40b5b6aabc115fa88a82dba88ffe5de0c5ed"
+    url "https://github.com/harehare/mq/releases/download/v0.1.3/mq-x86_64-apple-darwin"
+    sha256 "ef2f969a901823cb41e3ecb90990ade4560752ee9f9ab2a695c7c2e0fbfeb379"
   elsif OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/harehare/mq/releases/download/v0.1.4/mq-aarch64-apple-darwin"
-    sha256 "7fda14f98a228d992850c36a8c0e80810f33e213b79589c1c777d3bf1d3adb3a"
+    url "https://github.com/harehare/mq/releases/download/v0.1.3/mq-aarch64-apple-darwin"
+    sha256 "3f3eba6028509c5781d39bb3effa157231f9677c3ea556ca549560f1a6b3639e"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/harehare/mq/releases/download/v0.1.4/mq-x86_64-unknown-linux-gnu"
-    sha256 "6530a010634a8c6d06cf7c6c677146dc3303d8d88df0a561ea37427af697346b"
+    url "https://github.com/harehare/mq/releases/download/v0.1.3/mq-x86_64-unknown-linux-gnu"
+    sha256 "f41466fbf68ac4b1e40e657d107036e6aca9b7de40e7235ec297cf9bace19416"
   elsif OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/harehare/mq/releases/download/v0.1.4/mq-aarch64-unknown-linux-gnu"
-    sha256 "69dabee1cc931edc438985bd72e4205d6ae3beba1b8095dd493e5b251f5da2ff"
+    url "https://github.com/harehare/mq/releases/download/v0.1.3/mq-aarch64-unknown-linux-gnu"
+    sha256 "4da5fb0dcc7a8889e0ae649995d0843f61d5cd6c86d7fe3536fa0a255eb7982b"
   end
 
-  version "0.1.4"
+  version "0.1.3"
   license "MIT"
 
   def install
