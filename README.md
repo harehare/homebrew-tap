@@ -1,4 +1,4 @@
-# Harehare Tap
+# harehare Tap
 
 ## How do I install these formulae?
 
