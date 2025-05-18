@@ -1,4 +1,4 @@
-class Mq < Formula
+class Mq@016 < Formula
   desc "A jq-like command-line tool for Markdown processing"
   homepage "https://github.com/harehare/mq"
 
