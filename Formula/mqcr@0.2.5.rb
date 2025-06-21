@@ -22,13 +22,13 @@ class Mqcr < Formula
   def install
     case
     when OS.mac? && Hardware::CPU.intel?
-      bin.install "mqcr-x86_64-apple-darwin" => "mq"
+      bin.install "mqcr-x86_64-apple-darwin" => "mqcr"
     when OS.mac? && Hardware::CPU.arm?
-      bin.install "mqcr-aarch64-apple-darwin" => "mq"
+      bin.install "mqcr-aarch64-apple-darwin" => "mqcr"
     when OS.linux? && Hardware::CPU.intel?
-      bin.install "mqcr-x86_64-unknown-linux-gnu" => "mq"
+      bin.install "mqcr-x86_64-unknown-linux-gnu" => "mqcr"
     when OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      bin.install "mqcr-aarch64-unknown-linux-gnu" => "mq"
+      bin.install "mqcr-aarch64-unknown-linux-gnu" => "mqcr"
     end
   end
 end
