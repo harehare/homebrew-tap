@@ -64,7 +64,7 @@ class HomebrewFormulaUpdater
         file = $2
 
         # Extract binary name and platform, handle Windows .exe extension
-        if file =~ /^(mq(?:-lsp|-mcp)?)-(.+?)(?:\.exe)?$/
+        if file =~ /^(mq(?:-lsp|-mcp|cr)?)-(.+?)(?:\.exe)?$/
           binary = $1
           platform = $2
 
