@@ -26,10 +26,10 @@ if [ $? -eq 0 ]; then
 
   # Optional: Show a summary of changes
   echo "Updated formulas:"
-  ls -la "$(dirname "$0")/Formula/mq.rb" "$(dirname "$0")/Formula/mq-lsp.rb" "$(dirname "$0")/Formula/mq-mcp.rb"
+  ls -la "$(dirname "$0")/Formula/mq.rb" "$(dirname "$0")/Formula/mq-lsp.rb" "$(dirname "$0")/Formula/mq-mcp.rb" "$(dirname "$0")/Formula/mqcr.rb"
 
   echo "Created versioned formulas:"
-  ls -la "$(dirname "$0")/Formula/mq@$VERSION.rb" "$(dirname "$0")/Formula/mq-lsp@$VERSION.rb" "$(dirname "$0")/Formula/mq-mcp@$VERSION.rb" 2>/dev/null || echo "No versioned formulas found."
+  ls -la "$(dirname "$0")/Formula/mq@$VERSION.rb" "$(dirname "$0")/Formula/mq-lsp@$VERSION.rb" "$(dirname "$0")/Formula/mq-mcp@$VERSION.rb" "$(dirname "$0")/Formula/mqcr@$VERSION.rb" 2>/dev/null || echo "No versioned formulas found."
 else
   echo "❌ Formula updates failed."
   exit 1

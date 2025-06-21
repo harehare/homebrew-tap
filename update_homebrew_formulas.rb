@@ -14,6 +14,7 @@ class HomebrewFormulaUpdater
     { name: 'mq', file: 'mq.rb', class_name: 'Mq' },
     { name: 'mq-lsp', file: 'mq-lsp.rb', class_name: 'MqLsp' },
     { name: 'mq-mcp', file: 'mq-mcp.rb', class_name: 'MqMcp' }
+    { name: 'mqcr', file: 'mqcr.rb', class_name: 'MqCrawler' }
   ].freeze
 
   PLATFORMS = [
