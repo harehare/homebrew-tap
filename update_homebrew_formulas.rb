@@ -19,7 +19,6 @@ class HomebrewFormulaUpdater
   ].freeze
 
   PLATFORMS = [
-    { arch: 'x86_64-apple-darwin', condition: 'OS.mac? && Hardware::CPU.intel?' },
     { arch: 'aarch64-apple-darwin', condition: 'OS.mac? && Hardware::CPU.arm?' },
     { arch: 'x86_64-unknown-linux-gnu', condition: 'OS.linux? && Hardware::CPU.intel?' },
     { arch: 'aarch64-unknown-linux-gnu', condition: 'OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?' },
