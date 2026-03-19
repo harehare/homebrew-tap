@@ -15,7 +15,7 @@ class HomebrewFormulaUpdater
     { name: 'mq-dbg', file: 'mq-dbg.rb', class_name: 'MqDbg' },
     { name: 'mq-lsp', file: 'mq-lsp.rb', class_name: 'MqLsp' },
     { name: 'mq-mcp', file: 'mq-mcp.rb', class_name: 'MqMcp' },
-    { name: 'mqcr', file: 'mqcr.rb', class_name: 'MqCrawler' }
+    { name: 'mq-crawl', file: 'mq-crawl.rb', class_name: 'MqCrawl' }
   ].freeze
 
   PLATFORMS = [
@@ -64,7 +64,7 @@ class HomebrewFormulaUpdater
         file = $2
 
         # Extract binary name and platform, handle Windows .exe extension
-        if file =~ /^(mq(?:-lsp|-mcp|cr)?)-(.+?)(?:\.exe)?$/
+        if file =~ /^(mq(?:-lsp|-mcp|-dbg|-crawl)?)-(.+?)(?:\.exe)?$/
           binary = $1
           platform = $2
 
