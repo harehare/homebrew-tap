@@ -1,4 +1,4 @@
-class MqMcp@016 < Formula
+class MqMcpAT016 < Formula
   desc "mq Model Context Protocol (MCP) Server"
   homepage "https://github.com/harehare/mq"
 

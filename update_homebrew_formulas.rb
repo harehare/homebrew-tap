@@ -150,6 +150,23 @@ class HomebrewFormulaUpdater
 
     puts "Creating versioned formula: #{versioned_path}"
     FileUtils.cp(formula_path, versioned_path)
+
+    # Homebrew requires the class name of a versioned formula (name@version)
+    # to follow its Formulary.class_s(token) convention, e.g. mq-crawl@0.5.20
+    # -> MqCrawlAT0520. Otherwise `brew update` fails to import the formula.
+    token = versioned_name.gsub(/\.rb$/, '')
+    content = File.read(versioned_path)
+    content.sub!(/^class\s+\S+\s+<\s+Formula/, "class #{self.class.class_s(token)} < Formula")
+    File.write(versioned_path, content)
+  end
+
+  # Mirrors Homebrew::Formulary.class_s
+  def self.class_s(name)
+    class_name = name.capitalize
+    class_name.gsub!(/[-_.\s]([a-zA-Z0-9])/) { Regexp.last_match(1).upcase }
+    class_name.tr!('+', 'x')
+    class_name.sub!(/(.)@(\d)/, '\1AT\2')
+    class_name
   end
 end
 

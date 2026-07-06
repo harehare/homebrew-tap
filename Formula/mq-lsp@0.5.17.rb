@@ -1,4 +1,4 @@
-class MqLsp < Formula
+class MqLspAT0517 < Formula
   desc "mq Language Server Protocol (LSP) Server"
   homepage "https://github.com/harehare/mq"
 
