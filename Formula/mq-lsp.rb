@@ -6,17 +6,17 @@ class MqLsp < Formula
     url "https://github.com/harehare/mq/releases/download/v0.5.0/mq-lsp-x86_64-apple-darwin"
     sha256 "fb526e79e120116bbb60d48d1f4284edd73546e6913f97bf316f6b9dd89e7055"
   elsif OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/harehare/mq/releases/download/v0.9.1/mq-lsp-aarch64-apple-darwin"
-    sha256 "8229b3c65887f22b1dd6f641032fc65c03ae24febe18da2daa292c268bb0dbb9"
+    url "https://github.com/harehare/mq/releases/download/v0.9.2/mq-lsp-aarch64-apple-darwin"
+    sha256 "614857a1ca3b394cf2065e6c5bdaadb3a66894a28e15f827c3dd5e5fb4bae288"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/harehare/mq/releases/download/v0.9.1/mq-lsp-x86_64-unknown-linux-gnu"
-    sha256 "8d12d89aee796cde9997ef9189febce0148ecd0524f7365752c5ade0490b5a56"
+    url "https://github.com/harehare/mq/releases/download/v0.9.2/mq-lsp-x86_64-unknown-linux-gnu"
+    sha256 "a1431f21268e4a2e9b29ef73fced495307759253e15b56131714e87543697535"
   elsif OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/harehare/mq/releases/download/v0.9.1/mq-lsp-aarch64-unknown-linux-gnu"
-    sha256 "e8f53fc10cf3f10e1a7660443865fdcb86d5e8678fac584c5dff7632b00f6888"
+    url "https://github.com/harehare/mq/releases/download/v0.9.2/mq-lsp-aarch64-unknown-linux-gnu"
+    sha256 "129557bec174b6cf0ed96c3ae496bfeef3d091528b75461e13224fff70008007"
   end
 
-  version "0.9.1"
+  version "0.9.2"
   license "MIT"
 
   def install

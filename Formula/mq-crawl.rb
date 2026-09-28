@@ -3,17 +3,17 @@ class MqCrawl < Formula
   homepage "https://github.com/harehare/mq"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/harehare/mq/releases/download/v0.9.1/mq-crawl-aarch64-apple-darwin"
-    sha256 "6c82e0f7f20f1fbe8a45317029970763bd53745f40659146b028bc79f721e33c"
+    url "https://github.com/harehare/mq/releases/download/v0.9.2/mq-crawl-aarch64-apple-darwin"
+    sha256 "a5cf95865cc42bf99ed3937ffff2deec0037513b9110d1939590378358a040fb"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/harehare/mq/releases/download/v0.9.1/mq-crawl-x86_64-unknown-linux-gnu"
-    sha256 "b2c72052e97167aac9ef1e493c3ede21e437e6f8b4ebbfb09e322b2198ca615d"
+    url "https://github.com/harehare/mq/releases/download/v0.9.2/mq-crawl-x86_64-unknown-linux-gnu"
+    sha256 "a74358855d43c0ab64be0589e15cdaaca537ed02c9c633d913edc1845d4c80d1"
   elsif OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/harehare/mq/releases/download/v0.9.1/mq-crawl-aarch64-unknown-linux-gnu"
-    sha256 "d5e5e218e06a3de987ace82413dd496588054a3563bfe3c511ca153ea5d82d5d"
+    url "https://github.com/harehare/mq/releases/download/v0.9.2/mq-crawl-aarch64-unknown-linux-gnu"
+    sha256 "61b8fdcf721b5bd6830164f2118828c7dfd5c5b6a129ff811721a75333a98dae"
   end
 
-  version "0.9.1"
+  version "0.9.2"
   license "MIT"
 
   def install

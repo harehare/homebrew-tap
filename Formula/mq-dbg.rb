@@ -6,17 +6,17 @@ class MqDbg < Formula
     url "https://github.com/harehare/mq/releases/download/v0.2.22/mq-dbg-x86_64-apple-darwin"
     sha256 "29fcc3df19231c0cc567bbd15639ca9c655410fba67dc8beaabdc8f96991a372"
   elsif OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/harehare/mq/releases/download/v0.9.1/mq-dbg-aarch64-apple-darwin"
-    sha256 "ed7e6d5a44e68f21e263e1f6e569ded51bb97e7078f09b0b57be8e311fc87114"
+    url "https://github.com/harehare/mq/releases/download/v0.9.2/mq-dbg-aarch64-apple-darwin"
+    sha256 "4b30b38ce7e1869759a2167166ce75ea9cbb590f7d93d8f730d976b1495d1679"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/harehare/mq/releases/download/v0.9.1/mq-dbg-x86_64-unknown-linux-gnu"
-    sha256 "183c1fcf0c0926f1b14c7d7957f87be898fb3b70d4f6525db4801170c54b7a01"
+    url "https://github.com/harehare/mq/releases/download/v0.9.2/mq-dbg-x86_64-unknown-linux-gnu"
+    sha256 "9267914009ca8df8a73c864a70b83e21cae6b24731fe9313f2c1eb70c9527987"
   elsif OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/harehare/mq/releases/download/v0.9.1/mq-dbg-aarch64-unknown-linux-gnu"
-    sha256 "62f3a7957641a8cc85f6e415f90cf6ae14c3c71fbf26a0631e455cdabc6c877c"
+    url "https://github.com/harehare/mq/releases/download/v0.9.2/mq-dbg-aarch64-unknown-linux-gnu"
+    sha256 "6316ace5663811e08794e7d2205373e1ca49f5a67f730bd850db951c14e9ee2e"
   end
 
-  version "0.9.1"
+  version "0.9.2"
   license "MIT"
 
   def install

@@ -16,7 +16,7 @@ class MqMcp < Formula
     sha256 "c991033c5d9b76dccbae39f4eb7b86d03c63bacc692655e8309ac6c3599a55b7"
   end
 
-  version "0.9.1"
+  version "0.9.2"
   license "MIT"
 
   def install
