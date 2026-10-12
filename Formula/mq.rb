@@ -6,17 +6,17 @@ class Mq < Formula
     url "https://github.com/harehare/mq/releases/download/v0.5.0/mq-x86_64-apple-darwin"
     sha256 "5b044861f1e087c05be5634ae1490641653db9b00722bd7df69a1a329df5d000"
   elsif OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/harehare/mq/releases/download/v0.9.2/mq-aarch64-apple-darwin"
-    sha256 "6473bb37d31c54378260b2801121ef6127033d4bee637a154a2817c90ffada3e"
+    url "https://github.com/harehare/mq/releases/download/v0.9.3/mq-aarch64-apple-darwin"
+    sha256 "f23dab04290c37ca340c42977fb7c8cce73142d3ad3a3b2e2c0b40b02760488d"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/harehare/mq/releases/download/v0.9.2/mq-x86_64-unknown-linux-gnu"
-    sha256 "993c42b916b3106b92c6318d274b9387107fb1b4f0b6c58981e9f150e2cf5a5f"
+    url "https://github.com/harehare/mq/releases/download/v0.9.3/mq-x86_64-unknown-linux-gnu"
+    sha256 "cd08146ce7e48ef125b6f96c0345df986e14ca83e910343c245309d58234ad73"
   elsif OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/harehare/mq/releases/download/v0.9.2/mq-aarch64-unknown-linux-gnu"
-    sha256 "2b9c4e1b18a8fd550db5eaa4352ae510825ae1ff0712477718e9ad3d86b4c42a"
+    url "https://github.com/harehare/mq/releases/download/v0.9.3/mq-aarch64-unknown-linux-gnu"
+    sha256 "2f6841b9650145c314e455b999b10c29c221b6e9a1e01267a82d4e0e5ef3388c"
   end
 
-  version "0.9.2"
+  version "0.9.3"
   license "MIT"
 
   def install
